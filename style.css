@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button_primary{
+    background-image: linear-gradient(
+        to right,
+        #ff512f,
+        #dd2476,
+        #ff512f
+    );
+    color:#fff;
+    border:none;
+    border-radius: 6px;
+    padding: 12px;
+}
+
+.container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container_hero{
+    width:100%;
+}
+
+.container_hero_img{
+    width: 100%;
+}
+
+.hero_img{
+    width: 100%;
+}
+
+body{
+    font-family: 'Merriweather', sans-serif;
+    background-color: #ebf2ff;
+    overflow-x: hidden;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar_logo{
+    width: 100px;
+}
+
+.navbar_logo_img{
+    width: 100%;
+}
+
+@media (min-width: 768px){
+    .navbar{
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    .navbar_logo{
+        width: 150px;
+    }
+    .button_primary{
+        padding: 20px;
+        font-size: 20px;
+    }
+    .container_hero{
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        gap:10px;
+    }
+}
+
+@media (min-width: 1020px){
+    .container{
+        max-width: 1010px;
+    }
+    .container_hero_img{
+        width: 500px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 1400px){
+
+}
